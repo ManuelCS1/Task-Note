@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import * as moment from 'moment';
 import { category } from 'src/app/model/category';
 import { CategoryService } from 'src/app/service/category.service';
 
