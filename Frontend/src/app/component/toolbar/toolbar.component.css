@@ -1,0 +1,29 @@
+.toolbar {
+  background-color: blue;
+  color: white;
+  padding: 0 16px;
+}
+
+.toolbar-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.toolbar-spacer {
+  flex: 1;
+}
+
+.button-group {
+  display: flex;
+  gap: 16px; /* Adjust spacing between buttons */
+}
+
+.toolbar-button {
+  color: white;
+  background-color: darkblue; /* Optional: darker background for buttons */
+  border-radius: 4px; /* Optional: rounded corners */
+}
+
+.toolbar-button:hover {
+  background-color: lightblue; /* Optional: lighter background on hover */
+}

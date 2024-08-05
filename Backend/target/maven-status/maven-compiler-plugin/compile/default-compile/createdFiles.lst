@@ -1,0 +1,15 @@
+com\notes\backend\dtos\CategoryDTO.class
+com\notes\backend\repositories\ICategoryRepository.class
+com\notes\backend\entities\Note.class
+com\notes\backend\controllers\CategoryController.class
+com\notes\backend\controllers\NoteController.class
+com\notes\backend\services\INoteServices.class
+com\notes\backend\servicesimplement\CategoryServiceImplement.class
+com\notes\backend\services\ICategoryServices.class
+com\notes\backend\servicesimplement\NoteServiceImplement.class
+com\notes\backend\ServletInitializer.class
+com\notes\backend\repositories\INoteRepository.class
+com\notes\backend\entities\Category.class
+com\notes\backend\dtos\NoteDTO.class
+com\notes\backend\config\CorsConfig.class
+com\notes\backend\BackendApplication.class

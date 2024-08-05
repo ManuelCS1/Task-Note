@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <div class="container">
+      <h1>Note</h1>
+      <form [formGroup]="form" (submit)="accept()">
+
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input matInput required placeholder="title" formControlName="title">
+      </mat-form-field>
+
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Content</mat-label>
+        <input matInput required placeholder="content" formControlName="content">
+      </mat-form-field>
+
+      <br>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Category</mat-label>
+        <mat-select formControlName="category" multiple>
+          <mat-option *ngFor="let c of categories" [value]="c.id_category">
+            {{ c.title }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <br>
+
+      <div class="button-group">
+        <button mat-raised-button color="primary" (click)="accept()">Accept</button>
+        <button mat-raised-button color="warn" routerLink="/notes">Cancel</button>
+      </div>
+
+      <p>{{message}}</p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
