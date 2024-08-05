@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import * as moment from 'moment';
 import { category } from 'src/app/model/category';
 import { note } from 'src/app/model/note';
 import { CategoryService } from 'src/app/service/category.service';
@@ -19,7 +18,6 @@ export class NoteInsertComponent implements OnInit{
   message: string = ""
   edit: boolean = false
   id_note: number = 0;
-  maxdate: Date= moment().add().toDate();
   categories: category[] = [];
   idCategoryselect: number []= [];
 
